@@ -166,19 +166,23 @@
           },
           {
             "type": "p",
-            "text": "혈액 biomarker 데이터를 활용해 Canine Cognitive Dysfunction Syndrome(CCDS) 진단을 보조하는 ML 기반 플랫폼 고도화에 참여하고 있습니다."
+            "text": "혈액 biomarker를 이용한 Canine Cognitive Dysfunction Syndrome(CCDS) 진단 보조 모델의 기존 성능과 평가 방법을 재검토했습니다."
           },
           {
             "type": "li",
-            "text": "혈액 biomarker 기반 데이터 분석 및 머신러닝 적용"
+            "text": "(NORMAL vs CCDS) 기존 Random Forest의 Accuracy 0.8877이 bootstrap 과정의 train/test 중복으로 과대평가된 것을 확인했습니다."
           },
           {
             "type": "li",
-            "text": "임상 데이터 특성과 실제 진단 보조 사용 맥락을 고려한 모델 개발"
+            "text": "(NORMAL vs CCDS) 동일 조건의 leak-free cross-validation에서 성능이 Accuracy 0.7699로 감소하는 것을 확인했습니다."
           },
           {
             "type": "li",
-            "text": "기존 관련 연구를 기반으로 재현·확장"
+            "text": "(MCI vs SCI) 두 군을 구분하기 어려운 기존 biomarker의 한계를 분석하고, age를 regress out하는 방식으로 Accuracy 0.61 → 0.77, F1 0.48 → 0.77로 개선했습니다."
+          },
+          {
+            "type": "li",
+            "text": "NORMAL vs CCDS와 MCI vs SCI 접근을 결합한 SPECTRUM 모델을 설계하고 기존 방식과 비교했습니다."
           }
         ],
         "images": [
