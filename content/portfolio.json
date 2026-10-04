@@ -1,0 +1,417 @@
+[
+  {
+    "title": "Featured Work",
+    "blocks": [],
+    "projects": [
+      {
+        "title": "Canine Seizure Detection with Vision AI",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "2026.01 ~  AI Rookie 100팀 → 40팀 → 진행 중"
+          },
+          {
+            "type": "p",
+            "text": "개 뇌전증 환자의 발작 기록 사각지대를 줄이기 위해 실제 임상 영상만으로 발작 후보 구간을 찾는 Vision AI를 연구하고 있습니다."
+          },
+          {
+            "type": "li",
+            "text": "시그니처동물의료센터 임상 영상 42마리 · 350 clips"
+          },
+          {
+            "type": "li",
+            "text": "수의사 지도 아래 직접 구간 분리·라벨링"
+          },
+          {
+            "type": "li",
+            "text": "개체 단위 데이터 분리로 처음 보는 환자에 대한 일반화 검증"
+          },
+          {
+            "type": "li",
+            "text": "수의사의 판단 기준을 24개 임상 질문으로 구조화해 VLM 특징으로 활용"
+          },
+          {
+            "type": "li",
+            "text": "임상지식 기반 표현 ROC-AUC 0.865, 사전학습 영상 표현 0.771"
+          },
+          {
+            "type": "li",
+            "text": "위치정보 baseline, 병실 배경, 의료진 개입에 따른 수집 편향 검증"
+          },
+          {
+            "type": "li",
+            "text": "민감도 79%, Precision 0.39의 한계를 확인해 자동 경보보다 장시간 영상의 검토 후보 추출을 우선 활용 시나리오로 설정"
+          },
+          {
+            "type": "p",
+            "text": "Role · 문제 정의, 데이터 구축/라벨링, 모델 설계 및 실험, 오류 분석, 제1저자 논문 작성"
+          }
+        ],
+        "images": [
+          {
+            "src": "/portfolio/fig_flow.png",
+            "width": 1938,
+            "height": 1011
+          },
+          {
+            "src": "/portfolio/fig_auc.png",
+            "width": 1923,
+            "height": 970
+          }
+        ]
+      },
+      {
+        "title": "VetU1 / Vet-Sync",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "2026.01 ~ | Frontend Lead · Vision AI / Software Developer · 2026.07 정규직 전환"
+          },
+          {
+            "type": "p",
+            "text": "459명의 수의 의료진이 사용하는 입원환자 관리 시스템입니다. 웨스턴 동물병원, VIP 동물병원 등 국내 대형 동물병원에서 사용 중인 VetSync의 프론트엔드 개발을 리드하고 있습니다. VetU1의 세 번째 초기 멤버로 합류했습니다."
+          },
+          {
+            "type": "li",
+            "text": "실제 의료진이 사용하는 입원환자 관리 기능 개발 및 개선"
+          },
+          {
+            "type": "li",
+            "text": "Vision AI 연구 결과를 병원 workflow에 연결하는 제품화 검토"
+          },
+          {
+            "type": "li",
+            "text": "의료진의 업무 흐름과 데이터 구조를 이해한 뒤 기능 요구사항을 소프트웨어로 구현"
+          },
+          {
+            "type": "p",
+            "text": "확인해보기 👇"
+          },
+          {
+            "type": "p",
+            "text": "서비스 바로가기",
+            "href": "https://vetsync4.vetu1.com/login"
+          }
+        ],
+        "images": [
+          {
+            "src": "/portfolio/image 1.png",
+            "width": 1897,
+            "height": 860
+          },
+          {
+            "src": "/portfolio/image 2.png",
+            "width": 1917,
+            "height": 872
+          }
+        ]
+      },
+      {
+        "title": "hwpx-builder",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Open Source · Python Library / AI Agent Skill"
+          },
+          {
+            "type": "p",
+            "text": "GitHub Repository",
+            "href": "https://github.com/hwpx-builder/hwpx-builder"
+          },
+          {
+            "type": "p",
+            "text": "AI agent와 Python에서 HWPX 문서를 안정적으로 생성·편집·검증할 수 있도록 만든 오픈소스 도구입니다."
+          },
+          {
+            "type": "li",
+            "text": "HWPX 생성, 수정, 배포 양식 자동 채우기"
+          },
+          {
+            "type": "li",
+            "text": "중첩 표, 병합 셀, 형광펜, 이미지 등 실제 한국 문서 서식 지원"
+          },
+          {
+            "type": "li",
+            "text": "PNG/PDF 렌더링 및 레이아웃 검사"
+          },
+          {
+            "type": "li",
+            "text": "HWP ↔ HWPX 변환 workflow"
+          },
+          {
+            "type": "li",
+            "text": "확인한 것과 확인하지 못한 것을 분리해 보고하는 검증 설계"
+          }
+        ],
+        "images": [
+          {
+            "src": "/portfolio/image 3.png",
+            "width": 770,
+            "height": 637
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Research & ML",
+    "blocks": [],
+    "projects": [
+      {
+        "title": "iConnectome · Canine Cognitive Dysfunction ML",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "2026.01 ~"
+          },
+          {
+            "type": "p",
+            "text": "혈액 biomarker 데이터를 활용해 Canine Cognitive Dysfunction Syndrome(CCDS) 진단을 보조하는 ML 기반 플랫폼 고도화에 참여하고 있습니다."
+          },
+          {
+            "type": "li",
+            "text": "혈액 biomarker 기반 데이터 분석 및 머신러닝 적용"
+          },
+          {
+            "type": "li",
+            "text": "임상 데이터 특성과 실제 진단 보조 사용 맥락을 고려한 모델 개발"
+          },
+          {
+            "type": "li",
+            "text": "기존 관련 연구를 기반으로 재현·확장"
+          }
+        ],
+        "images": [
+          {
+            "src": "/portfolio/image 4.png",
+            "width": 1000,
+            "height": 1425
+          },
+          {
+            "src": "/portfolio/image 5.png",
+            "width": 1508,
+            "height": 835
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Publications & Research Outputs",
+    "blocks": [],
+    "projects": [
+      {
+        "title": "Canine Seizure Detection",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "First Author · Manuscript in preparation"
+          },
+          {
+            "type": "p",
+            "text": "42마리 개의 350개 임상 영상과 VLM 기반 임상 특징을 이용한 발작 감지 연구입니다. 모델 성능뿐 아니라 데이터 편향, baseline, 실제 임상 적용 시나리오를 함께 검증하고 있습니다."
+          }
+        ],
+        "images": []
+      },
+      {
+        "title": "2차 진료 동물병원 입원환자 관리업무 전산화의 가능성과 한계",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "First Author · 2026 KSVC Autumn Conference / 16th Yeongnam Veterinary Conference"
+          },
+          {
+            "type": "p",
+            "text": "동일한 입원 전산 시스템을 사용하는 5개 2차 진료 동물병원의 수의사와 테크니션을 대상으로 전산화의 적합성, 효율 변화, 불편 경험을 분석했습니다."
+          },
+          {
+            "type": "li",
+            "text": "총 응답자 118명: 수의사 67명, 테크니션 51명"
+          },
+          {
+            "type": "li",
+            "text": "치료 지시·완료 확인과 일일 관찰 기록은 전산화 적합성이 높게 평가"
+          },
+          {
+            "type": "li",
+            "text": "인계, 환자 우선순위 결정, 경직된 입력 필드와 시스템 안정성은 주요 한계로 확인"
+          }
+        ],
+        "images": [
+          {
+            "src": "/portfolio/KSVC_poster_입원전산화-1.png",
+            "width": 7087,
+            "height": 8662
+          }
+        ]
+      },
+      {
+        "title": "Age obscures acoustic signal in Alzheimer's disease speech classification",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Siu Beom & Sun-shin Yi · Konkuk University"
+          },
+          {
+            "type": "p",
+            "text": "연령이라는 교란 변수가 Alzheimer’s disease 음성 분류 성능에 미치는 영향을 분석한 연구입니다. npj digital medicine에 제출 예정입니다."
+          }
+        ],
+        "images": []
+      }
+    ]
+  },
+  {
+    "title": "Open Source & Small Tools",
+    "blocks": [],
+    "projects": [
+      {
+        "title": "Colon Length Calculator",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "GitHub",
+            "href": "https://github.com/siusiubeom/colon_length_calculator"
+          },
+          {
+            "type": "p",
+            "text": "굽이진 colon의 길이를 이미지에서 보다 일관되게 측정하기 위해 만든 컴퓨터비전 도구입니다."
+          },
+          {
+            "type": "li",
+            "text": "Segment Anything Model 활용"
+          },
+          {
+            "type": "li",
+            "text": "굽은 구조의 segmentation 및 길이 산출"
+          },
+          {
+            "type": "li",
+            "text": "반복적인 수작업 측정 자동화"
+          }
+        ],
+        "images": []
+      },
+      {
+        "title": "ELISA Searcher",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "연구 과정에서 ELISA kit 탐색과 비교 작업을 줄이기 위해 만든 소형 도구입니다."
+          },
+          {
+            "type": "p",
+            "text": "GitHub",
+            "href": "https://github.com/siusiubeom/elisakitsearcher"
+          }
+        ],
+        "images": []
+      }
+    ]
+  },
+  {
+    "title": "Selected Product Development",
+    "blocks": [],
+    "projects": [
+      {
+        "title": "냠코치",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "2025.05 ~ 2025.07 | Android Developer"
+          },
+          {
+            "type": "p",
+            "text": "식단 관리 플랫폼의 Android 개발 팀원으로 참여했습니다."
+          },
+          {
+            "type": "li",
+            "text": "Jetpack Compose · Kotlin"
+          },
+          {
+            "type": "li",
+            "text": "주요 화면 및 사용자 interaction 구현"
+          },
+          {
+            "type": "li",
+            "text": "모바일 앱 협업 개발 경험"
+          }
+        ],
+        "images": [
+          {
+            "src": "/portfolio/메인홈.png",
+            "width": 412,
+            "height": 917
+          },
+          {
+            "src": "/portfolio/계획-AI_날짜_추천.png",
+            "width": 200,
+            "height": 512
+          },
+          {
+            "src": "/portfolio/운동_편집_화면.png",
+            "width": 412,
+            "height": 1064
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Experience & Activities",
+    "blocks": [
+      {
+        "type": "li",
+        "text": "VetU1 · Vision AI / Software Developer · 2026.01 합류 · 2026.07 정규직 전환"
+      },
+      {
+        "type": "li",
+        "text": "건국대학교 학부연구생 · 2026.01 ~"
+      },
+      {
+        "type": "li",
+        "text": "건국대학교 RISE 사업단 프로젝트팀 · Lead Developer · 2025.06 ~ 2025.11"
+      },
+      {
+        "type": "li",
+        "text": "Hult Prize · Campus Director · 2025.08 ~ 2026.02"
+      },
+      {
+        "type": "li",
+        "text": "건국대학교 영자신문 · 대외협력부장"
+      }
+    ],
+    "projects": []
+  },
+  {
+    "title": "Selected Awards & Programs",
+    "blocks": [
+      {
+        "type": "li",
+        "text": "Try Everything Global Student Startup IR Pitching Day · 대상(서울시장상)"
+      },
+      {
+        "type": "li",
+        "text": "Lunit · OpenAI Conquer Health · 2위"
+      },
+      {
+        "type": "li",
+        "text": "UNIV Startup Ideathon · 1위"
+      },
+      {
+        "type": "li",
+        "text": "AI Rookie 100팀 → 40팀 → 진행 중 · 팀장"
+      },
+      {
+        "type": "li",
+        "text": "학생 창업유망팀 300+ · 최종 선발"
+      },
+      {
+        "type": "li",
+        "text": "예비창업패키지 · VetU1 · CTO로 참여 · 1·2차 선정 · 1차 지원금 2,000만 원 · 2차 약 4,000만 원"
+      }
+    ],
+    "projects": []
+  }
+]
