@@ -87,6 +87,7 @@ const english: Record<string, string> = {
   "건국대학교 RISE 사업단 프로젝트팀 · Lead Developer · 2025.06 ~ 2025.11": "Konkuk University RISE Project Team · Lead Developer · Jun – Nov 2025",
   "Hult Prize · Campus Director · 2025.08 ~ 2026.02": "Hult Prize · Campus Director · Aug 2025 – Feb 2026",
   "건국대학교 영자신문 · 대외협력부장": "Konkuk University English Newspaper · Head of External Relations",
+  "2026 · 서울청년기획봉사단 3기 · 유해식물 카드게임 제작 참여": "2026 · Seoul Youth Planning Volunteer Group · Cohort 3 · Helped create a card game about harmful plants",
   "Try Everything Global Student Startup IR Pitching Day · 대상(서울시장상)": "Try Everything Global Student Startup IR Pitching Day · Grand Prize (Seoul Mayor’s Award)",
   "Lunit · OpenAI Conquer Health · 2위": "Lunit · OpenAI Conquer Health · 2nd Place",
   "UNIV Startup Ideathon · 1위": "UNIV Startup Ideathon · 1st Place",
