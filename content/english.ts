@@ -35,6 +35,7 @@ const english: Record<string, string> = {
   "재밌는 이야기, 환영해요!": "Got something fun in mind?",
   "2026.01 ~  AI Rookie 100팀 → 40팀 → 진행 중": "Jan 2026 – present · AI Rookie: 100 teams → 40 teams → Ongoing",
   "개 뇌전증 환자의 발작 기록 사각지대를 줄이기 위해 실제 임상 영상만으로 발작 후보 구간을 찾는 Vision AI를 연구하고 있습니다.": "I research vision AI that identifies potential seizure episodes in clinical videos, helping reduce gaps in seizure records for dogs with epilepsy.",
+  "2026.10.05 · 시그니처동물의료센터에서 실사용 테스트 시작": "Oct 5, 2026 · Started real-world testing at Signature Animal Medical Center",
   "시그니처동물의료센터 임상 영상 42마리 · 350 clips": "350 clinical video clips from 42 dogs at Signature Animal Medical Center",
   "수의사 지도 아래 직접 구간 분리·라벨링": "Personally segmented and labeled videos under veterinary supervision",
   "개체 단위 데이터 분리로 처음 보는 환자에 대한 일반화 검증": "Used patient-level data splits to evaluate generalization to unseen dogs",

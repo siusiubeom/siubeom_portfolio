@@ -2,7 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import sourcePortfolio from "@/content/portfolio.json";
 import translations from "@/content/english";
-import portrait from "@/public/portfolio/image.png";
+import idPhoto from "@/public/portfolio/image.png";
+import portrait from "@/public/photos/profile-builder.jpg";
+import sideB from "@/public/photos/side-b-hood.jpg";
 import workNote from "@/public/images/work-note.png";
 import Mascot from "./mascot";
 import ResumeButton from "./resume-button";
@@ -23,6 +25,7 @@ function Blocks({ blocks }: { blocks: Block[] }) {
 
 function Gallery({ images, title, english, small = false }: { images: Asset[]; title: string; english: boolean; small?: boolean }) {
   const captions: Record<string, [string, string]> = {
+    "field-test-board.jpg": ["10.05 · 시그니처동물의료센터, 실사용 테스트 시작", "Oct 5 · Real-world testing begins at Signature Animal Medical Center"],
     "fig_flow.png": ["임상 영상에서 모델 검증까지", "From clinical video to model validation"],
     "fig_auc.png": ["표현 방식에 따른 ROC-AUC 비교", "Comparing representations: ROC-AUC"],
     "image 1.png": ["병원에서 실제 사용하는 VetSync 화면", "VetSync, in the hospital workflow"],
@@ -62,7 +65,7 @@ export default function Portfolio({ language = "ko" }: { language?: "ko" | "en" 
   const timeline = [
     { year: "2024", note: copy("첫 페이지", "a new chapter"), items: [copy("건국대학교 수의학과 입학", "Started veterinary medicine at Konkuk")] },
     { year: "2025", note: copy("일단 만들어보기", "learning by making"), items: ["Android Developer @ NyamCoach", "Lead Developer @ RISE", "Hult Prize Campus Director"] },
-    { year: "2026", note: copy("분야 사이를 연결하기", "connecting the dots"), items: [copy("수의학 연구실 학부연구생 합류", "Joined a veterinary research lab"), copy("1월 · VetU1 세 번째 초기 멤버로 합류", "Jan · Joined VetU1 as its 3rd early member"), copy("7월 · VetU1 정규직 전환", "Jul · Transitioned to full-time at VetU1"), copy("건국대학교 영자신문 · 대외협력부장", "Konkuk University English Newspaper · Head of External Relations"), copy("서울청년기획봉사단 3기 · 유해식물 카드게임 제작 참여", "Seoul Youth Planning Volunteer Group · Cohort 3 · Helped create a card game about harmful plants"), "AI Rookie finalist", "Conquer Health · 2nd", "Try Everything · Grand Prize", copy("제1저자 연구", "First-author research"), "hwpx-builder"] },
+    { year: "2026", note: copy("분야 사이를 연결하기", "connecting the dots"), items: [copy("수의학 연구실 학부연구생 합류", "Joined a veterinary research lab"), copy("1월 · VetU1 세 번째 초기 멤버로 합류", "Jan · Joined VetU1 as its 3rd early member"), copy("7월 · VetU1 정규직 전환", "Jul · Transitioned to full-time at VetU1"), copy("건국대학교 영자신문 · 대외협력부장", "Konkuk University English Newspaper · Head of External Relations"), copy("서울청년기획봉사단 3기 · 유해식물 카드게임 제작 참여", "Seoul Youth Planning Volunteer Group · Cohort 3 · Helped create a card game about harmful plants"), "AI Rookie finalist", "Conquer Health · 2nd", "Try Everything · Grand Prize", copy("10월 · 시그니처동물의료센터 Vision AI 실사용 테스트 시작", "Oct · Started real-world Vision AI testing at Signature Animal Medical Center"), copy("제1저자 연구", "First-author research"), "hwpx-builder"] },
   ];
   const awards = [
     [copy("예비창업패키지 · VetU1", "Pre-Startup Package · VetU1"), copy("CTO로 참여 · 1·2차 선정 · 1차 지원금 2,000만 원 · 2차 약 4,000만 원", "Participating as CTO · Selected for Phases 1 & 2 · Phase 1 funding: KRW 20M · Phase 2: approx. KRW 40M")],
@@ -76,7 +79,7 @@ export default function Portfolio({ language = "ko" }: { language?: "ko" | "en" 
     ["UNIV Startup Ideathon", copy("1위", "1st Place")],
   ];
   const featuredNotes = [
-    [copy("42마리 · 350개 임상 영상", "42 dogs · 350 clips"), "ROC-AUC 0.865", copy("제1저자 논문 준비 중", "First-author manuscript")],
+    [copy("42마리 · 350개 임상 영상", "42 dogs · 350 clips"), "ROC-AUC 0.865", copy("10월 · 동물병원 실사용 테스트 시작", "Oct · Real-world clinic testing"), copy("제1저자 논문 준비 중", "First-author manuscript")],
     ["459 clinical users", "Frontend lead", "Real hospital workflow"],
     ["Create · Edit · Verify HWPX", "Agent-friendly document tooling"],
   ];
@@ -101,6 +104,7 @@ export default function Portfolio({ language = "ko" }: { language?: "ko" | "en" 
     <main id="main">
       <section className="hero sheet mint" id="home" aria-labelledby="hero-title">
         <div className="hero-copy">
+          <Image className="resume-photo" src={idPhoto} alt={copy("범시우 증명사진", "ID photo of Siu Beom")} sizes="90px" />
           <h1 id="hero-title">{copy("안녕하세요,", "Hi there,")}<br />{copy("시우입니다!", "I’m Siu!")}</h1>
           <p className="hero-tagline"><mark>{copy("다양한 거를 배우고 만들고 궁금해하고 있어요", "I’m learning, building, and getting curious about all sorts of things.")}</mark></p>
           <p className="hero-contact"><a href="mailto:siubeom2005915@gmail.com">{copy("하는 일에 관심 있으면 언제든지 연락 주세요!", "Interested in what I do? Feel free to get in touch!")}</a></p>
@@ -175,7 +179,10 @@ export default function Portfolio({ language = "ko" }: { language?: "ko" | "en" 
       <section className="about-section sheet mint" id="about" data-page="06">
         <Heading number="06" note="THE PERSON HOLDING THE PEN" title="A note about me" />
         <div className="about-grid">
-          <figure className="about-photo"><Image src={portrait} alt={copy("범시우 프로필 사진", "Portrait of Siu Beom")} sizes="(max-width: 600px) 180px, 220px" /><figcaption>Siu Beom <span aria-hidden="true">☺</span></figcaption></figure>
+          <div className="about-photos">
+            <figure className="about-photo"><Image src={portrait} alt={copy("장비를 들고 있는 범시우", "Siu Beom holding a piece of hardware")} sizes="(max-width: 600px) 180px, 220px" /><figcaption>Siu Beom <span aria-hidden="true">☺</span></figcaption></figure>
+            <figure className="about-photo side-b"><Image src={sideB} alt={copy("후드를 쓰고 브이 하는 범시우", "Siu Beom in a hoodie, making a V sign")} sizes="110px" /><figcaption>side B</figcaption></figure>
+          </div>
           <div className="about-copy"><p className="about-lead">{copy("수의학을 공부하는데, 어쩌다 보니 자꾸 코드를 쓰고 있어요.", "I study veterinary medicine, but I somehow keep ending up writing code.")}</p><p>{copy("의학, AI, 소프트웨어, 그리고 사람이 만나는 지점의 문제를 좋아합니다.", "I like problems that sit between fields — where medicine, AI, software, and people meet.")}</p><p>{copy("Brent International School Manila에서 6년을 보내, 한국어와 영어 모두 편하게 사용해요.", "I spent six years at Brent International School Manila, so I’m comfortable working in both Korean and English.")}</p><p className="personal-note">{copy("일하지 않을 때도 대개 뭔가 만들고 있어요. 딱히 필요하진 않지만, 재밌는 것들요.", "Outside of work, I’m usually building something unnecessary but interesting.")}</p><a className="text-link" href="mailto:siubeom2005915@gmail.com">{copy("재밌는 이야기, 환영해요", "Got something fun in mind?")} ↗</a></div>
         </div>
       </section>

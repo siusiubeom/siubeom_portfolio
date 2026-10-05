@@ -16,6 +16,10 @@
           },
           {
             "type": "li",
+            "text": "2026.10.05 · 시그니처동물의료센터에서 실사용 테스트 시작"
+          },
+          {
+            "type": "li",
             "text": "시그니처동물의료센터 임상 영상 42마리 · 350 clips"
           },
           {
@@ -48,6 +52,11 @@
           }
         ],
         "images": [
+          {
+            "src": "/photos/field-test-board.jpg",
+            "width": 1200,
+            "height": 1491
+          },
           {
             "src": "/portfolio/fig_flow.png",
             "width": 1938,
