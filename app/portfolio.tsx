@@ -4,10 +4,11 @@ import sourcePortfolio from "@/content/portfolio.json";
 import translations from "@/content/english";
 import idPhoto from "@/public/portfolio/image.png";
 import portrait from "@/public/photos/profile-builder.jpg";
-import sideB from "@/public/photos/side-b-hood.jpg";
+import bSideCover from "@/public/photos/b-side-cover.jpg";
 import workNote from "@/public/images/work-note.png";
 import Mascot from "./mascot";
 import ResumeButton from "./resume-button";
+import SiteHeader from "./site-header";
 
 type Block = { type: string; text: string; href?: string };
 type Asset = { src: string; width: number; height: number };
@@ -91,16 +92,7 @@ export default function Portfolio({ language = "ko" }: { language?: "ko" | "en" 
 
   return <>
     <a className="skip-link" href="#main">{copy("본문으로 건너뛰기", "Skip to content")}</a>
-    <header className="site-header">
-      <a className="wordmark" href="#home" aria-label="Siu Beom home"><Mascot compact label={copy("시우 캐릭터 로고", "Siu’s character logo")} />siubeom.</a>
-      <nav aria-label={copy("주요 메뉴", "Main navigation")}>
-        <a href="#work">Field Notes</a><a href="#research">Research Notes</a><a href="#about">About</a>
-        <div className="language-switch" role="group" aria-label="Language / 언어">
-          <Link href="/" hrefLang="ko" lang="ko" aria-label="한국어" aria-current={!en ? "page" : undefined}>KO</Link>
-          <Link href="/en" hrefLang="en" lang="en" aria-label="English" aria-current={en ? "page" : undefined}>EN</Link>
-        </div>
-      </nav>
-    </header>
+    <SiteHeader english={en} page="home" />
     <main id="main">
       <section className="hero sheet mint" id="home" aria-labelledby="hero-title">
         <div className="hero-copy">
@@ -181,7 +173,7 @@ export default function Portfolio({ language = "ko" }: { language?: "ko" | "en" 
         <div className="about-grid">
           <div className="about-photos">
             <figure className="about-photo"><Image src={portrait} alt={copy("장비를 들고 있는 범시우", "Siu Beom holding a piece of hardware")} sizes="(max-width: 600px) 180px, 220px" /><figcaption>Siu Beom <span aria-hidden="true">☺</span></figcaption></figure>
-            <figure className="about-photo side-b"><Image src={sideB} alt={copy("후드를 쓰고 브이 하는 범시우", "Siu Beom in a hoodie, making a V sign")} sizes="110px" /><figcaption>side B</figcaption></figure>
+            <Link className="about-record" href={en ? "/en/b-side" : "/b-side"} aria-label={copy("B-side: 좋아하는 것들 보기", "B-side: things I like")}><span className="about-record-vinyl" aria-hidden="true" /><Image src={bSideCover} alt="" sizes="120px" /><span className="about-record-label">B-side ↗</span></Link>
           </div>
           <div className="about-copy"><p className="about-lead">{copy("수의학을 공부하는데, 어쩌다 보니 자꾸 코드를 쓰고 있어요.", "I study veterinary medicine, but I somehow keep ending up writing code.")}</p><p>{copy("의학, AI, 소프트웨어, 그리고 사람이 만나는 지점의 문제를 좋아합니다.", "I like problems that sit between fields — where medicine, AI, software, and people meet.")}</p><p>{copy("Brent International School Manila에서 6년을 보내, 한국어와 영어 모두 편하게 사용해요.", "I spent six years at Brent International School Manila, so I’m comfortable working in both Korean and English.")}</p><p className="personal-note">{copy("일하지 않을 때도 대개 뭔가 만들고 있어요. 딱히 필요하진 않지만, 재밌는 것들요.", "Outside of work, I’m usually building something unnecessary but interesting.")}</p><a className="text-link" href="mailto:siubeom2005915@gmail.com">{copy("재밌는 이야기, 환영해요", "Got something fun in mind?")} ↗</a></div>
         </div>
